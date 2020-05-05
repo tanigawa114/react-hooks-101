@@ -9,7 +9,7 @@ const Event = ({ dispatch, event }) => {
     if (result)
       dispatch({
         type: "DELETE_EVENT",
-        id: id,
+        id,
       });
   };
 
