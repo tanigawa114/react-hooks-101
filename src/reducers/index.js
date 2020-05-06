@@ -1,4 +1,4 @@
-import { combineReducer } from "redux";
+import { combineReducers } from "redux";
 import events from "./events";
 
-export default combineReducer({ events });
+export default combineReducers({ events });
