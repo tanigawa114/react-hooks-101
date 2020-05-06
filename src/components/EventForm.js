@@ -52,9 +52,7 @@ const EventForm = () => {
             className="form-control"
             id="formEventBody"
             value={body}
-            onChange={(e) => {
-              setBody(e.target.value);
-            }}
+            onChange={(e) => setBody(e.target.value)}
           />
         </div>
         <button
@@ -67,7 +65,7 @@ const EventForm = () => {
         <button
           className="btn btn-danger"
           onClick={deleteAllEvents}
-          disabled={state.length === 0}
+          disabled={state.events.length === 0}
         >
           全てのイベントを削除する
         </button>
